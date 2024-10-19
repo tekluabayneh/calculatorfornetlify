@@ -1,13 +1,132 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+/* App.css */
+@font-face {
+  font-family: "Digital7";
+  src: url("./fonts/digital_7/digital-7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Digital7Italic";
+  src: url("./fonts/digital_7/digital-7\ \(italic\).ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body,
+html {
+  background: #c2c2d6;
+}
+.formulaScreen,
+.outputScreen {
+  font-family: "Digital7", sans-serif;
+  text-align: right;
+  font-size: 29px;
+}
+
+.formulaScreen {
+  font-size: 20px;
+  color: rgb(243, 80, 80);
+}
+
+.main_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.claculator_place {
+  width: 100%;
+  height: 90%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.flex_the_input {
+  width: 100%;
+  height: 16%;
+  /* background: gray; */
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* gap: 0.5rem; */
+  /* margin-bottom: 0.4rem; */
+}
+
+.calculator_and_author_container {
+  width: 334px;
+  height: 453px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_container {
+  width: 320px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: default;
+  /* margin: 0.1rem; */
+  padding: 1px 6px;
+}
+
+button:hover {
+  border: 2px solid gray;
+  color: black;
+}
+#clear {
+  width: 160px;
+  height: 65px;
+  grid-column: span 2;
+  background: rgb(172, 57, 57);
+}
+#zero {
+  width: 160px;
+  height: 65px;
+  grid-column: span 2;
+}
+
+#equals {
+  width: 80px;
+  height: 130px;
+  background: rgb(0, 68, 102);
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+}
+#devide,
+#multiply,
+#subtract,
+#add {
+  background: rgb(102, 102, 102);
+}
+.author {
+  text-align: center;
+  font-family: "Digital7Italic" sans-serif;
+  margin-top: 15px;
 }
