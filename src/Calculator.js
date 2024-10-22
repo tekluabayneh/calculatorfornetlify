@@ -106,13 +106,7 @@ const Calculator = () => {
         {/* outside of the calculator app will be the author */}
         <div className="author">
           Designed and Coded By <br />
-          <a
-            href="https://www.freecodecamp.org/no-stack-dub-sack"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Peter Weinberg
-          </a>
+          Teklu
         </div>
       </div>
     </div>
